@@ -1,6 +1,7 @@
+# Nonsegmented implementeation of the sieve of Eratosthenes algorithm
 import numpy as np
 
-def eratostenes(n):
+def eratosthenes(n):
     n = (n + 1) >> 1
     i, j, p = 1, 3, np.ones(n, dtype=np.int8)
 
@@ -11,4 +12,4 @@ def eratostenes(n):
 
     return p.sum()
 
-print(eratostenes(1000000))
+print(eratosthenes(1000000))
