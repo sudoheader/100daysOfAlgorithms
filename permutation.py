@@ -21,4 +21,4 @@ def permute(values):
 
     return values
 
-permute(list('FADE'))
+print(permute(list('FADE')))
