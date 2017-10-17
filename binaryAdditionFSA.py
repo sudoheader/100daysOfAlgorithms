@@ -1,4 +1,4 @@
-from itertools import izip_longest
+from itertools import izip_longest as zip_longest
 
 # states
 p0c0 = 0, {}
@@ -25,7 +25,7 @@ def add(x, y):
     value, transition = p0c0
 
 
-    for r, s in izip_longest(x, y, fillvalue=0):
+    for r, s in zip_longest(x, y, fillvalue=0):
         value, transition = transition[r, s]
         z.append(value)
 
