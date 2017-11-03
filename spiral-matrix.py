@@ -15,5 +15,6 @@ for i in spiral(3):
 
 for i in spiral(5):
     print('\t'.join(map(str, i)))
+    
 for i in spiral(7):
     print('\t'.join(map(str, i)))
